@@ -1,12 +1,7 @@
-<h1>steezyasfuuuuh</h1>
+<h1>compiling..</h1>
 
-
-    <div (click)="displayNextSong()">
-      <iframe 
-      width="560" 
-      height="315" 
-      [src]="getEmbedUrl(selectedSong.videoId)" 
-      frameborder="0" 
-      allow="autoplay; encrypted-media" 
-      allowfullscreen></iframe>
-    </div>
+ <youtube-player
+ [videoId]="id"
+ (ready)="savePlayer($event)"
+ (change)="onStateChange($event)"
+></youtube-player>

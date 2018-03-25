@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import { SongService } from './song.service';
+import { YoutubePlayerModule } from 'ngx-youtube-player';
+ 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    YoutubePlayerModule
   ],
   providers: [SongService,],
   bootstrap: [AppComponent]
